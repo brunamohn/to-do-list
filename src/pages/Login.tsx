@@ -20,6 +20,7 @@ function Login(){
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
+    onLogin(input.username);
     navigate("/todo");
     
   }

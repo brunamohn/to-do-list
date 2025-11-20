@@ -1,6 +1,19 @@
+import { useContext } from "react";
+import Context from "../context/Context";
+
 function TodoList(){
+  
+  const { user } = useContext(Context);
+  
   return (
-    <h1>Página TodoList</h1>
+    <main className="todolist-container">
+      <h1>Welcome, {user}</h1>
+      <img src="" alt="" />
+      <button type="button">Add new task</button>
+      <section>
+        Daily Tasks
+      </section>
+    </main>
   )
 }
 
